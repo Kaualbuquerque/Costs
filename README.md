@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# React Costs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Costs é uma aplicação desenvolvida com React.js para gerenciamento de custos de projetos. Este projeto me ajudou a entender e aplicar conceitos fundamentais de React, além de boas práticas no desenvolvimento de aplicações web modernas. Durante o desenvolvimento, aprendi como criar, editar e excluir projetos e serviços de forma eficiente, simulando o funcionamento de uma aplicação real.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Gerenciamento de Projetos**: Criação, visualização, edição e exclusão de projetos.
+- **Adição de Serviços**: Adicionar serviços a um projeto e gerenciar seus custos.
+- **Cálculo de Orçamento**: Exibição do custo total do projeto com base nos serviços adicionados.
+- **Navegação Dinâmica**: Uso do React Router para criar uma SPA (Single Page Application).
+- **Simulação de API**: Integração com uma API simulada (como JSON Server) para operações de CRUD.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React.js**: Biblioteca principal para criação da interface.
+- **React Router**: Gerenciamento de rotas na aplicação.
+- **Hooks**: Uso de `useState` e `useEffect` para gerenciamento de estado e efeitos colaterais.
+- **CSS Modules**: Estilização de componentes com escopo isolado.
+- **JSON Server**: Simulação de uma API REST para persistência de dados.
 
-- Configure the top-level `parserOptions` property like this:
+## O que eu aprendi
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Componentização**:
+   - Aprendi a dividir a interface em componentes reutilizáveis e bem estruturados.
+   - Entendi como os componentes se comunicam usando props e como elevar o estado (lifting state up) quando necessário.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Gerenciamento de Estado**:
+   - Compreendi como usar hooks como `useState` para estados locais e `useEffect` para lidar com efeitos colaterais.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. **Navegação**:
+   - Aprendi a configurar e usar o React Router para criar rotas dinâmicas e navegar entre páginas sem recarregar a aplicação.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. **CRUD com API**:
+   - Desenvolvi habilidades para consumir uma API e realizar operações de criar, ler, atualizar e deletar dados.
+   - Usei métodos HTTP como GET, POST, PUT e DELETE.
+
+5. **Estilização**:
+   - Pratiquei o uso de CSS Modules para criar estilos isolados e manter o código organizado.
+
+6. **Boas Práticas de Desenvolvimento**:
+   - Entendi como organizar arquivos e pastas de forma eficiente.
+   - Apliquei validações e mensagens de erro para melhorar a experiência do usuário.
+   - Melhorei a clareza e legibilidade do código.
