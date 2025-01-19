@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "id": "2cf4",
+      "name": "Estação Meteorológica IoT",
+      "budget": "1000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Infraestrutura"
+    },
+    {
+      "id": "2",
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": "3",
+      "name": "Desgin"
+    },
+    {
+      "id": "4",
+      "name": "Planejamento"
+    }
+  ]
+}
