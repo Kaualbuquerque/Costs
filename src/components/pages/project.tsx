@@ -36,7 +36,6 @@ function Project() {
     const { id } = useParams()
 
     const [project, setProject] = useState<ProjectType | null>();
-    const [services, setServices] = useState<any[]>([])
     const [showProjectForm, setShowProjectForm] = useState(false);
     const [showServiceForm, setShowServiceForm] = useState(false);
     const [message, setMessage] = useState<string>();
@@ -132,7 +131,7 @@ function Project() {
             },
             body: JSON.stringify(project)
         }).then((resp) => resp.json())
-            .then((data) => {
+            .then(() => {
                 setShowServiceForm(false)
             })
             .catch((err) => console.log(err))
@@ -157,7 +156,7 @@ function Project() {
             },
             body: JSON.stringify(projectUpdated)
         }).then((resp) => resp.json())
-            .then((data) => {
+            .then(() => {
                 setProject(projectUpdated)
                 setMessage("Serviço removido com sucesso!")
             })

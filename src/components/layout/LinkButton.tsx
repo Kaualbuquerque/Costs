@@ -1,5 +1,3 @@
-import {Link} from "react-router-dom"
-
 
 /* Link button styled component */
 import { Btn } from "../styles/layout_styles/styled_linkButton";
